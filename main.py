@@ -1,12 +1,12 @@
-x = input("enter a number : ")
+# so in this program i do a things that can download image from internet
+import random
+import urllib.request
 
+# now we make a function that can take the image url and can download
 
-print(type(x)) # it show me that the type is in string
-# so alll in i take it may in string
-# so i need to convert it in my desire type
+def download_from_web(url):
+    name = random.randrange(1,1000)
+    full_name = str(name)+".jpg"
+    urllib.request.urlretrieve(url,full_name)
 
-a = int(input("entere a number : "))
-
-print(f" so the type is {type(a)}") # so the type is <class 'int'>
-
-
+download_from_web("http://tinyurl.com/y47elp8p")
